@@ -27,11 +27,18 @@ Run the `artisan` command below to publish the configuration file
 
 	$ php artisan vendor:publish
 
-Navigate to `app/config/hmacPacketAuth.php` and update all parameters
+Add the following properties to your .env file
+
+    HMAC_AUTH_LOCAL=true
+    HMAC_AUTH_RATE_ON=true
+    HMAC_AUTH_RATE_TIME=60
+    HMAC_AUTH_RATE_LIMIT_NUMBER=60
 
 Run the `migrate` command below to add the database tables required
 
 	$ php artisan migrate
+
+Add 'auth.hmac' to any routes you want to protect!!!
 
 ## Contributing
 
