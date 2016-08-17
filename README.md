@@ -1,4 +1,4 @@
-# API Authenticated Based On Packet Sent
+# API Authentication Based On Packet Data Sent (HMAC SHA512)
 
 The main motivation for creating this package is to have a lot more flexibility and security for API based communication. I have used JWT in the past and found it to be scarily easy to hack!
 
