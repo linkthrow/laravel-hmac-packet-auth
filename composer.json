@@ -1,7 +1,7 @@
 {
     "name": "linkthrow/hmac-packet-auth",
     "description": "HMAC Http Packet Auth",
-    "keywords": ['hmac', 'sha', 'packet', 'auth', 'authentication', 'token'],
+    "keywords": ["hmac", "sha", "packet", "auth", "authentication", "token"],
     "homepage": "https://github.com/linkthrow/laravel-hmac-packet-auth",
     "authors": [
         {
