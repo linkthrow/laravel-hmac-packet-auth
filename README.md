@@ -4,6 +4,11 @@ The main motivation for creating this package is to have a lot more flexibility 
 
 I have followed the principles outlined and implemented at Twitter.
 
+## Clients
+
+To make API requests, please use the following plugins
+[Angular](https://github.com/linkthrow/angular-hmac-packet-auth "Angular")
+
 ## How it works
 
 Client sends a request to the API with a series of headers. A HMAC SHA512 is generated based on these along with request data therefore it eliminates man in the middle attacks, replay attacks and injections.
