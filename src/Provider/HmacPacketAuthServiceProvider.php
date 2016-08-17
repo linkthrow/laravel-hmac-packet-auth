@@ -1,4 +1,4 @@
-<?php namespace LinkThrow\HmacPacketAuth;
+<?php namespace LinkThrow\HmacPacketAuth\Provider;
 
 use Illuminate\Support\ServiceProvider;
 

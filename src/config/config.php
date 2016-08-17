@@ -1,10 +1,10 @@
 <?php return [
 	
-	'turnedOffForLocal'	=>	true,
+	'turnedOffForLocal'	=>	env('HMAC_AUTH_LOCAL', true),
     'rateLimit' => [
-        'turnedOn' => true,
-        'timePeriod' => 60,
-        'limitNumber' => 60,
+        'turnedOn' => env('HMAC_AUTH_RATE_ON', true),
+        'timePeriod' => env('HMAC_AUTH_RATE_TIME', 60),
+        'limitNumber' => env('HMAC_AUTH_RATE_LIMIT_NUMBER', 60),
     ],
 
 ];
