@@ -1,0 +1,25 @@
+{
+    "name": "linkthrow/hmac-packet-auth",
+    "description": "HMAC Http Packet Auth",
+    "keywords": ['hmac', 'sha', 'packet', 'auth', 'authentication', 'token'],
+    "homepage": "https://github.com/linkthrow/laravel-hmac-packet-auth",
+    "authors": [
+        {
+            "name": "Hussan Choudhry",
+            "email": "hussan@uselinkthrow.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "~5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.5"
+    },
+    "autoload": {
+       "psr-4": {
+         "LinkThrow\\HmacPacketAuth\\": "src/"
+        }
+    },
+    "license": "MIT"
+    
+}
