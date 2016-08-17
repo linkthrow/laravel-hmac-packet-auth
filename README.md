@@ -38,6 +38,8 @@ Run the `migrate` command below to add the database tables required
 
 	$ php artisan migrate
 
+Add 'auth.hmac' to any routes you want to protect!!!
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
