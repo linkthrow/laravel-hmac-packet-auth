@@ -4,6 +4,21 @@ The main motivation for creating this package is to have a lot more flexibility 
 
 I have followed the principles outlined and implemented at Twitter.
 
+## How it works
+
+Client sends a request to the API with a series of headers. A HMAC SHA512 is generated based on these along with request data therefore it eliminates man in the middle attacks, replay attacks and injections.
+
+A user is identified via an access token (which expires) or an api key.
+
+The headers are:
+
+    'key' or 'access-token'
+    'url'
+    'timestamp'
+    'client-nonce' (randomly generated string on the client side to prevent replay attacks as the nonce is stored against an api log on the database)
+    'hash' (generated with all the headers and request data as a json array)
+    'token' (not used to generate hash obviously)
+
 ## Quick Start
 
 ### Setup
