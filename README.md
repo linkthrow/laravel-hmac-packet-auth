@@ -8,13 +8,9 @@ I have followed the principles outlined and implemented at Twitter.
 
 ### Setup
 
-Update your `composer.json` file and add the following under the `require` key
+Run composer command
 
-	"linkthrow/laravel-hmac-packet-auth": "dev-master"
-
-Run the composer update command:
-
-	$ composer update
+	$ composer require linkthrow/hmac-packet-auth
 
 In your `config/app.php` add `'LinkThrow\HmacPacketAuth\Provider\HmacPacketAuthServiceProvider'` to the end of the `$providers` array
 
