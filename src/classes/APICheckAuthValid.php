@@ -11,13 +11,16 @@ class APICheckAuthValid {
 	private $request;
 
 	//seconds
-	private $rateLimitCheckOn = Config::get('hmacPackageAuth.rateLimit.turnedOn');
-	private $rateLimitTimePeriod = Config::get('hmacPackageAuth.rateLimit.timePeriod');
-	private $rateLimitNumber = Config::get('hmacPackageAuth.rateLimit.limitNumber');
+	private $rateLimitCheckOn;
+	private $rateLimitTimePeriod;
+	private $rateLimitNumber;
 
 	public function __construct(Request $request)
 	{
 		$this->request = $request;
+		$this->rateLimitCheckOn = Config::get('hmacPackageAuth.rateLimit.turnedOn');
+		$this->rateLimitTimePeriod = Config::get('hmacPackageAuth.rateLimit.timePeriod');
+		$this->rateLimitNumber = Config::get('hmacPackageAuth.rateLimit.limitNumber');
 	}
 
 	public function isRateValid()
