@@ -69,7 +69,7 @@ class HttpPacketTokenCheckMiddleware {
 									
 									$hash = hash_hmac('sha512', json_encode($this->convertAllDataToString($theData), JSON_UNESCAPED_SLASHES), $theData['token']);
 
-									$orderedHash = hash_hmac('sha512', json_encode($this->convertAllDataToString($theData), JSON_UNESCAPED_SLASHES), ksort($theData['token']));
+									$orderedHash = hash_hmac('sha512', json_encode($this->convertAllDataToString(ksort($theData)), JSON_UNESCAPED_SLASHES), $theData['token']);
 
 									if($hash === $request->header('hash') || $orderedHash === $request->header('hash')) {
 
