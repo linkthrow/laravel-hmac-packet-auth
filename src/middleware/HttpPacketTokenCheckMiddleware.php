@@ -25,7 +25,7 @@ class HttpPacketTokenCheckMiddleware {
 		}
 
 		//Quick hack to get image upload working
-		if($request->header('url') && (strpos($request->header('url'), 'upload/image') !== false)) {
+		if($request->header('url') && (strpos($request->header('url'), 'grab-file') !== false)) {
 			return $next($request);
 		}
 
